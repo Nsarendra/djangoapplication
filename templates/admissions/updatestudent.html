@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>add admission page</title>
+
+</head>
+
+<body>
+<h1> Hello, welcome to the admission page.</h1><br/>
+<h3> please fill the below application.</h3>
+<form method="POST">
+    <table>
+    {{form.as_table}}
+    </table>
+    <br/>
+    <input type="submit" value="Update Student">
+     {% csrf_token %}
+</form>
+</body>
+
+</html>

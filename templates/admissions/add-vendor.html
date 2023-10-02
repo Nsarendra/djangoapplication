@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>add vendor page</title>
+
+</head>
+
+<body>
+<h1> Hello, welcome to the vendor page.</h1><br/>
+<h3> please fill the below application.</h3>
+<form method="POST">
+    <table>
+    {{form.as_table}}
+    </table>
+    <br/>
+    <input type="submit" value="Add vendor">
+     {% csrf_token %}
+</form>
+</body>
+
+</html>
